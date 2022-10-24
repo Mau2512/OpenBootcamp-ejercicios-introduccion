@@ -1,0 +1,45 @@
+public class Main {
+
+
+    public static void main(String[] args) {
+        Persona persona = new Persona();
+        persona.setNombre("Mauricio");
+        System.out.println("Nombre: " + persona.getNombre());
+
+        persona.setEdad(18);
+        System.out.println("Edad: " + persona.getEdad());
+
+        persona.setTelefono("+1 123456789");
+        System.out.println("Telefono: " + persona.getTelefono());
+
+    }
+}
+     class Persona{
+        private String Nombre;
+        private int Edad;
+        private String telefono;
+
+
+    public void setNombre(String Nombre){
+        this.Nombre = Nombre;
+    }
+    public String getNombre(){
+        return Nombre;
+    }
+
+    public void setEdad(int Edad){
+        this.Edad = Edad;
+    }
+
+    public int getEdad(){
+        return Edad;
+    }
+
+    public void setTelefono(String telefono){
+        this.telefono = telefono;
+    }
+
+    public String getTelefono(){
+        return telefono;
+    }
+}
